@@ -1,0 +1,15 @@
+{
+  "name": "backgroundservices",
+  "module": "index.ts",
+  "type": "commonjs",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.0",
+    "node-cron": "^3.0.3"
+  }
+}
