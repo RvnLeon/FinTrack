@@ -2,6 +2,7 @@ const express = require("express");
 const cron = require("node-cron");
 const app = express();
 const dotenv = require("dotenv");
+const expenseEmail = require("./EmailService/Expense");
 const mongoose = require("mongoose");
 
 dotenv.config();
@@ -17,7 +18,7 @@ mongoose
 
 const schedule = () => {
   cron.schedule("* * * * * *", () => {
-    console.log("running a task every minute");
+    expenseEmail();
   });
 };
 
